@@ -6,6 +6,7 @@ var addToWorkloadButton;
 var viewOffenderPacketButton;
 var viewMyWorkloadButton;
 var viewHistoryButton;
+var refreshButton;
 
 var waitListGrid;
 
@@ -33,14 +34,13 @@ var waitListGridSource = {
 var waitListGridAdapter;
 
 var waitListGridColumns = [
-  {  text: 'Off. #', dataField: 'offenderNumber', width: 75 },
-  {  text: 'Name', dataField: 'offenderName', width: 75 },
-  {  text: 'APSIN #', dataField: 'apsinNumber', width: 75 },
-  {  text: 'DOB', dataField: 'dob', width: 75 },
-  {  text: 'Location', dataField: 'location', width: 75 },
-  {  text: 'Office', dataField: 're-entryOffice', width: 75 },
-  {  text: 'Release Date', dataField: 'releaseDate', width: 75 },
-  {  text: 'Veteran?', dataField: 'veteranStatus', width: 75 },
-  {  text: 'Cyc.', dataField: 'cycles', width: 75 },
-  {  text: 'Notes', dataField: 'remarks', width: 75 }
+  {  text: 'Off. #', dataField: 'offenderNumber', width: 80, cellsAlign: 'center' },
+  {  text: 'Name', dataField: 'offenderName', width: 260 },
+  {  text: 'APSIN #', dataField: 'apsinNumber', width: 82, cellsAlign: 'center' },
+  {  text: 'DOB', dataField: 'dob', width: 80, cellsFormat: 'MM/dd/yyyy' },
+  {  text: 'Location', dataField: 'location', width: 210 },
+  {  text: 'Office', dataField: 're-entryOffice', width: 160 },
+  {  text: 'Release Date', dataField: 'releaseDate', width: 82, cellsFormat: 'MM/dd/yyyy' },
+  {  text: 'Vet?', dataField: 'veteranStatus', width: 60, cellsAlign: 'center' },
+  {  text: 'Cyc.', dataField: 'cycles', width: 36, cellsAlign: 'center' }
 ];

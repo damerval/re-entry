@@ -10,9 +10,14 @@ body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0;
 #pageBox { padding: 55px 25px; width: 1050px }
 
 #waitListTitleBox { border: 1px solid darkgrey; background-color: #FDFDFD }
-#docSeal { float: left; width: 15%; margin: 1.5% 0 1.5% 1.5% }
-#waitListTitleText { float: left; text-align: center; width: 67%; margin-top: 5% }
-#hssSeal { float: right; width: 15%; margin: 1.5% 1.5% 1.5% 0 }
+#docSeal { float: left; width: 120px; margin: 1% 0 1% 1% }
+#waitListTitleText { float: left; text-align: center; width: 67%; margin-top: 3.5% }
+#hssSeal { float: right; width: 120px; margin: 1% 1% 1% 0 }
 #waitListTitleBox:after { content: ""; display: block; clear: both }
 
 #waitListButtonsBox button { margin-right: 10px }
+
+#waitListGridBox { margin-top: 10px }
+
+#waitListFooterBox { margin-top: 10px; position: relative }
+#waitListFooterBox button { display: block; margin: 0 auto }
