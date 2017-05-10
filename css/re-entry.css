@@ -1,0 +1,18 @@
+.hidden { display: none }
+.largeTitle {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0; padding: 0 }
+
+#pageBox { padding: 55px 25px; width: 1050px }
+
+#waitListTitleBox { border: 1px solid darkgrey; background-color: #FDFDFD }
+#docSeal { float: left; width: 15%; margin: 1.5% 0 1.5% 1.5% }
+#waitListTitleText { float: left; text-align: center; width: 67%; margin-top: 5% }
+#hssSeal { float: right; width: 15%; margin: 1.5% 1.5% 1.5% 0 }
+#waitListTitleBox:after { content: ""; display: block; clear: both }
+
+#waitListButtonsBox button { margin-right: 10px }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d6fdeaee-b6ce-47c4-9848-dfd4e0f02ee2" name="LocalWWW" url="http://localhost/re-entry/">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\re-entry" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
