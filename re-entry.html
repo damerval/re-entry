@@ -21,10 +21,13 @@
   <script src="lib/jqwidgets/jqxcheckbox.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxdropdownlist.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxgrid.js" type="text/javascript"></script>
+  <script src="lib/jqwidgets/jqxgrid.edit.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxgrid.selection.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxgrid.sort.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxgrid.filter.js" type="text/javascript"></script>
   <script src="lib/jqwidgets/jqxgrid.pager.js" type="text/javascript"></script>
+  <script src="lib/jqwidgets/jqxtextarea.js" type="text/javascript"></script>
+  <script src="lib/jqwidgets/jqxwindow.js" type="text/javascript"></script>
 
 <!------------------------------------------------- Page styles ------------------------------------------------------->
   <link rel="stylesheet" href="css/re-entry.css" type="text/css"/>
@@ -34,13 +37,26 @@
   <script src="js/re-entry_init.js"></script>
   <script src="js/re-entry_events.js"></script>
 
+  <style type="text/css">
+    #testButton {display: block; position: absolute; top: 75px; left: 150px }
+  </style>
+  <script type="text/javascript" language="JavaScript">
+
+    $(document).ready(function () {
+      $("#testButton").on('click', function () {
+        workloadWindow.jqxWindow('open');
+      });
+    });
+
+  </script>
+
 </head>
 
 <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <body>
 <!-- Main visible contents featuring buttons, wait list grid, and other aux elements ---------------------------------->
-<div id="pageBox">
+<div id="pageBox" >
   <div id="waitListTitleBox">
     <img title="docSeal" src="images/DocBadgeOriginal.png" alt="DOC official seal" id="docSeal"/>
     <div class="largeTitle" id="waitListTitleText">DOC-H&SS Coalition <br> Re-entry Services Waiting List</div>
@@ -62,7 +78,18 @@
 </div>
 
 <!-- Workload window -------------------------------------------------------------------------------------------------->
-<div id="workloadWindow" class="hidden"></div>
+<div id="workloadWindow" class="hidden">
+  <div> My workload </div>
+  <div class="contentBox">
+    <div id="workloadButtonRow">
+      <button id="dischargeFromWorkload"> Discharge selected </button>
+      <button id="returnToWaitList"> Return selected to waiting list </button>
+      <button id="saveWorkload"> Save </button>
+      <button id="cancelWorkload"> Cancel </button>
+    </div>
+    <div id="workloadGrid"></div>
+  </div>
+</div>
 
 <!-- History window --------------------------------------------------------------------------------------------------->
 <div id="historyWindow" class="hidden"></div>
@@ -72,6 +99,8 @@
 
 <!-- Discharge dialog ------------------------------------------------------------------------------------------------->
 <div id="dischargeDialog" class="hidden"></div>
+
+<button id="testButton">Test</button>
 
 </body>
 </html>

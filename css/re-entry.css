@@ -7,6 +7,8 @@
 }
 body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0; padding: 0 }
 
+.contentBox { padding: 1.5em }
+
 #pageBox { padding: 55px 25px; width: 1050px }
 
 #waitListTitleBox { border: 1px solid darkgrey; background-color: #FDFDFD }
@@ -21,3 +23,12 @@ body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0;
 
 #waitListFooterBox { margin-top: 10px; position: relative }
 #waitListFooterBox button { display: block; margin: 0 auto }
+
+#workloadButtonRow { margin: 0 0 1em 0 }
+#workloadButtonRow button { display: block }
+#dischargeFromWorkload { float: left }
+#returnToWaitList {float: left; margin-left: 1em }
+#cancelWorkload {float: right; margin-right: 1em }
+#saveWorkload { float: right }
+#workloadButtonRow:after { content: ""; display: block; float: none; clear: both }
+#workloadGrid { background-color: red; border: 1px solid lightgoldenrodyellow; height: 550px; width: 902px }

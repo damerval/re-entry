@@ -9,4 +9,16 @@ $(document).ready(function () {
     waitListGrid.jqxGrid('updateBoundData');
   });
 
+  viewMyWorkloadButton.on('click', function () {
+    workloadWindow.jqxWindow('open');
+  });
+
+  workloadCancelButton.on('click', function () {
+    workloadWindow.jqxWindow('close');
+  });
+
+  workloadSaveButton.on('click', function () {
+    workloadWindow.jqxWindow('close');
+  });
+
 });
