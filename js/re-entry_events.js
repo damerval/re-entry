@@ -21,4 +21,21 @@ $(document).ready(function () {
     workloadWindow.jqxWindow('close');
   });
 
+  viewHistoryButton.on('click', function () {
+    historyWindow.jqxWindow('open');
+  });
+
+  historyCloseButton.on('click', function () {
+    historyWindow.jqxWindow('close');
+  });
+
+  waitListGrid.on('rowselect', function () {
+    addToWorkloadButton.jqxButton({ disabled: false });
+    viewOffenderPacketButton.jqxButton({ disabled: false });
+  });
+
+  addToWorkloadButton.on('click', function () {
+    addToWorkloadDialog.jqxWindow('open');
+  });
+
 });

@@ -55,14 +55,13 @@
 <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <body>
-<!-- Main visible contents featuring buttons, wait list grid, and other aux elements ---------------------------------->
+<!-- Main visible contents ---------------------------------->
 <div id="pageBox" >
   <div id="waitListTitleBox">
     <img title="docSeal" src="images/DocBadgeOriginal.png" alt="DOC official seal" id="docSeal"/>
-    <div class="largeTitle" id="waitListTitleText">DOC-H&SS Coalition <br> Re-entry Services Waiting List</div>
+    <div class="largeTitle" id="waitListTitleText">DOC-DHSS Coalition <br> Re-entry Services Waiting List</div>
     <img title="hssSeal" src="images/hss_seal.png" alt="H&SS official seal" id="hssSeal"/>
   </div>
-  <div style="float: none; clear: both">&nbsp;</div>
   <div id="waitListButtonsBox">
     <button id="addToWorkload"> Add selected to my workload </button>
     <button id="viewOffenderPacket"> View selected offender packet </button>
@@ -92,10 +91,27 @@
 </div>
 
 <!-- History window --------------------------------------------------------------------------------------------------->
-<div id="historyWindow" class="hidden"></div>
+<div id="historyWindow" class="hidden">
+  <div> Case Management History </div>
+  <div class="contentBox">
+    <div id="historyGrid"></div>
+    <div id="historyButtonRow">
+      <button id="closeHistory"> Close </button>
+    </div>
+  </div>
+</div>
 
 <!-- Add to workload dialog ------------------------------------------------------------------------------------------->
-<div id="addToWorkloadDialog" class="hidden"></div>
+<div id="addToWorkloadDialog" class="hidden">
+  <div> Add to my workload confirmation </div>
+  <div>
+    <div class="dialogNarrative">
+      Are you sure? You will only be able to undo this action as long as the offender has not been transferred or discharged.
+    </div>
+    <button id="addToWorkLoadCancel"> Cancel </button>
+    <button id="addToWorkLoadOK"> Confirm </button>
+  </div>
+</div>
 
 <!-- Discharge dialog ------------------------------------------------------------------------------------------------->
 <div id="dischargeDialog" class="hidden"></div>

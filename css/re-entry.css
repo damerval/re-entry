@@ -8,8 +8,9 @@
 body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0; padding: 0 }
 
 .contentBox { padding: 1.5em }
+.dialogNarrative { margin: 1.5em }
 
-#pageBox { padding: 55px 25px; width: 1050px }
+#pageBox { padding: 55px 25px 0 25px; width: 1050px }
 
 #waitListTitleBox { border: 1px solid darkgrey; background-color: #FDFDFD }
 #docSeal { float: left; width: 120px; margin: 1% 0 1% 1% }
@@ -17,6 +18,7 @@ body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0;
 #hssSeal { float: right; width: 120px; margin: 1% 1% 1% 0 }
 #waitListTitleBox:after { content: ""; display: block; clear: both }
 
+#waitListButtonsBox { margin-top: 15px }
 #waitListButtonsBox button { margin-right: 10px }
 
 #waitListGridBox { margin-top: 10px }
@@ -31,4 +33,10 @@ body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0;
 #cancelWorkload {float: right; margin-right: 1em }
 #saveWorkload { float: right }
 #workloadButtonRow:after { content: ""; display: block; float: none; clear: both }
-#workloadGrid { background-color: red; border: 1px solid lightgoldenrodyellow; height: 550px; width: 902px }
+#workloadGrid { background-color: #E2EEF7; height: 550px; width: 902px }
+
+#historyButtonRow { margin-top: 10px; position: relative }
+#historyButtonRow button { display: block; margin: 0 auto }
+#historyGrid { background-color: #E2EEF7; height: 550px; width: 901px }
+
+#addToWorkloadDialog div button { margin-left: 1.8em }
