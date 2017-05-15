@@ -131,3 +131,21 @@ var historyGridColumns = [
 var addToWorkloadDialog;
 var addToWorkLoadOKButton;
 var addToWorkloadCancelButton;
+
+var dischargeDialog;
+var dischargeDropDown;
+var dischargeOKButton;
+var dischargeCancelButton;
+
+var dischargeOptionsSource = {
+  dataType: 'json',
+  dataFields: [
+    { name: 'dischargeCode', map: 'dsc', type: 'string' },
+    { name: 'dischargeValue', map: 'dsv', type: 'string' }
+  ],
+  id: 'dischargeCode',
+  url: 'discharge.json',
+  data: {}
+};
+
+var dischargeOptionsAdapter;

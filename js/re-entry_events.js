@@ -38,4 +38,12 @@ $(document).ready(function () {
     addToWorkloadDialog.jqxWindow('open');
   });
 
+  workLoadGrid.on('rowselect', function () {
+    workloadDischargeButton.jqxButton({ disabled: false });
+  });
+
+  workloadDischargeButton.on('click', function () {
+    dischargeDialog.jqxWindow('open');
+  });
+
 });

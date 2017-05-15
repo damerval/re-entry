@@ -40,3 +40,6 @@ body { background: url("../images/reentry_background.jpg") no-repeat; margin: 0;
 #historyGrid { background-color: #E2EEF7; height: 550px; width: 901px }
 
 #addToWorkloadDialog div button { margin-left: 1.8em }
+
+#dischargeDialog div button { margin-left: 1.8em }
+#dischargeStatus { margin: 1em 0 1.5em 1.5em }

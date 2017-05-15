@@ -38,7 +38,7 @@
   <script src="js/re-entry_events.js"></script>
 
   <style type="text/css">
-    #testButton {display: block; position: absolute; top: 75px; left: 150px }
+    #testButton {display: none; position: absolute; top: 75px; left: 150px }
   </style>
   <script type="text/javascript" language="JavaScript">
 
@@ -114,7 +114,19 @@
 </div>
 
 <!-- Discharge dialog ------------------------------------------------------------------------------------------------->
-<div id="dischargeDialog" class="hidden"></div>
+<div id="dischargeDialog" class="hidden">
+  <div> Discharge offender </div>
+  <div>
+    <div class="dialogNarrative">
+      NOTE: This action cannot be undone. The affected services cycle will still be viewable in the re-entry services history dialog, but the offender will
+      not be able to receive re-entry services until their next incarceration cycle.
+      Please select a discharge status and press OK, or press cancel to abort.
+    </div>
+    <div id="dischargeStatus"></div>
+    <button id="dischargeCancel"> Cancel </button>
+    <button id="dischargeOK"> OK </button>
+  </div>
+</div>
 
 <button id="testButton">Test</button>
 

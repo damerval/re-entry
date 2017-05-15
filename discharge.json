@@ -1,0 +1,18 @@
+[
+ {
+   "dsc": 1,
+   "dsv": "Cooperative Discharge"
+ },
+ {
+   "dsc": 2,
+   "dsv": "Program Non-Compliance"
+ },
+ {
+   "dsc": 3,
+   "dsv": "Participant Opt-Out"
+ },
+ {
+   "dsc": 4,
+   "dsv": "Administrative Removal"
+ }
+]
